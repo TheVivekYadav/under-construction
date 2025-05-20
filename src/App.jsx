@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Construction } from 'lucide-react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#f8fafc',
+        color: '#222',
+        fontFamily: 'sans-serif',
+      }}
+    >
+      <Construction size={72} color="#f59e42" strokeWidth={2.5} />
+      <h1 style={{ marginTop: 24, fontSize: 32 }}>Page Under Construction</h1>
+      <p style={{ marginTop: 12, fontSize: 18, color: '#666' }}>
+        We&apos;re working hard to bring you this page. Please check back soon!
       </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
